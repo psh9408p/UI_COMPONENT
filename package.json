@@ -1,0 +1,20 @@
+{
+  "name": "ui-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psh9408p/UI_COMPONENT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psh9408p/UI_COMPONENT/issues"
+  },
+  "homepage": "https://github.com/psh9408p/UI_COMPONENT#readme"
+}

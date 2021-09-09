@@ -42,7 +42,6 @@ img {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  /* justify-content: center; */
   width: 672px;
   height: 100vh;
 }

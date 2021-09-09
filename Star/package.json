@@ -1,0 +1,16 @@
+{
+  "name": "star",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^13.0.1"
+  },
+  "type": "module"
+}

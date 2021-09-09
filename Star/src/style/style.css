@@ -1,0 +1,163 @@
+@charset "utf-8";
+@import "./reset.css";
+/* 유틸리티 */
+/* 스크린 리더 전용 */
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* 한줄 말줄임 */
+.sl-ellipsis {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 두줄 말줄임 */
+.multi-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 컨테이너 스타일 */
+
+#app {
+  overflow: scroll;
+  font-family: "Noto Sans KR", sans-serif;
+}
+img {
+  width: 100%;
+}
+
+.movie-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  /* justify-content: center; */
+  width: 672px;
+  height: 100vh;
+}
+
+.movie {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 64px;
+}
+
+.poster-container {
+  position: absolute;
+  width: 281px;
+  height: 396px;
+  left: -64px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.content {
+  width: 608px;
+  height: 500px;
+  background-color: #333;
+  border-radius: 15px;
+  color: #fff;
+  padding: 64px 0 0 266px;
+  box-sizing: border-box;
+}
+
+.content-type {
+  color: #bdbdbd;
+}
+
+.content-type span + span::before {
+  content: "";
+  width: 1px;
+  height: 13px;
+  background-color: #bdbdbd;
+  margin: 0px 7px -1px 3px;
+  display: inline-block;
+}
+
+.content-title {
+  margin: 13px 0 114px 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.content-favorite {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.content-favorite button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.button-recommend.on {
+  background-color: #2f80ed;
+}
+
+.button-recommend .icon-thumbs-up {
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 29px;
+  height: 29px;
+  background: center / contain url(../images/icon_thumbs_up.png) no-repeat;
+}
+
+.button-recommend.on .icon-thumbs-up {
+  background: center / contain url(../images/icon_thumbs_up_fill.png) no-repeat;
+}
+.button-heart.on {
+  background-color: #eb5757;
+}
+
+.button-heart .icon-heart {
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 29px;
+  height: 29px;
+  background: center / contain url(../images/icon_heart.png) no-repeat;
+}
+
+.button-heart.on .icon-heart {
+  background: center / contain url(../images/icon_heart_fill.png) no-repeat;
+}
+
+.star-average {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.star-point-container {
+  display: flex;
+  align-items: center;
+}
+
+.star-background {
+  display: flex;
+}
+.star-background img {
+  width: 51px;
+}
+
+.remove-star {
+  width: 22px;
+  height: 22px;
+  margin-left: 11px;
+}
